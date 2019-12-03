@@ -6,3 +6,9 @@ class ArtistForm(forms.ModelForm):
     class Meta:
         model = Artist
         fields = ('name', 'photo_url', 'nationality')
+
+class SongForm(forms.ModelForm):
+
+    class Meta:
+        model = Song
+        fields = ('artist', 'title', 'album', 'preview_url')
